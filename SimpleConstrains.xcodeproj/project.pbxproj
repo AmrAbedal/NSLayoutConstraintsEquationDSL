@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		B6197481210DBAA200C43391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6197480210DBAA200C43391 /* AppDelegate.swift */; };
 		B6197483210DBAA200C43391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6197482210DBAA200C43391 /* ViewController.swift */; };
-		B6197486210DBAA200C43391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6197484210DBAA200C43391 /* Main.storyboard */; };
 		B6197489210DBAA200C43391 /* SimpleConstrains.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6197487210DBAA200C43391 /* SimpleConstrains.xcdatamodeld */; };
 		B619748B210DBAA200C43391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B619748A210DBAA200C43391 /* Assets.xcassets */; };
 		B619748E210DBAA200C43391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B619748C210DBAA200C43391 /* LaunchScreen.storyboard */; };
 		B6197496210DD5DA00C43391 /* AmrConstrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6197495210DD5DA00C43391 /* AmrConstrains.swift */; };
+		B6197498210DEF5300C43391 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6197497210DEF5300C43391 /* UIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B619747D210DBAA200C43391 /* SimpleConstrains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleConstrains.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6197480210DBAA200C43391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6197482210DBAA200C43391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6197485210DBAA200C43391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6197488210DBAA200C43391 /* SimpleConstrains.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleConstrains.xcdatamodel; sourceTree = "<group>"; };
 		B619748A210DBAA200C43391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B619748D210DBAA200C43391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B619748F210DBAA200C43391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6197495210DD5DA00C43391 /* AmrConstrains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmrConstrains.swift; sourceTree = "<group>"; };
+		B6197497210DEF5300C43391 /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 			children = (
 				B6197480210DBAA200C43391 /* AppDelegate.swift */,
 				B6197482210DBAA200C43391 /* ViewController.swift */,
+				B6197497210DEF5300C43391 /* UIManager.swift */,
 				B6197495210DD5DA00C43391 /* AmrConstrains.swift */,
-				B6197484210DBAA200C43391 /* Main.storyboard */,
 				B619748A210DBAA200C43391 /* Assets.xcassets */,
 				B619748C210DBAA200C43391 /* LaunchScreen.storyboard */,
 				B619748F210DBAA200C43391 /* Info.plist */,
@@ -131,7 +131,6 @@
 			files = (
 				B619748E210DBAA200C43391 /* LaunchScreen.storyboard in Resources */,
 				B619748B210DBAA200C43391 /* Assets.xcassets in Resources */,
-				B6197486210DBAA200C43391 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6197498210DEF5300C43391 /* UIManager.swift in Sources */,
 				B6197489210DBAA200C43391 /* SimpleConstrains.xcdatamodeld in Sources */,
 				B6197483210DBAA200C43391 /* ViewController.swift in Sources */,
 				B6197496210DD5DA00C43391 /* AmrConstrains.swift in Sources */,
@@ -152,14 +152,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B6197484210DBAA200C43391 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6197485210DBAA200C43391 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B619748C210DBAA200C43391 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
