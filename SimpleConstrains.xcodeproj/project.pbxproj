@@ -13,6 +13,7 @@
 		B6197489210DBAA200C43391 /* SimpleConstrains.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6197487210DBAA200C43391 /* SimpleConstrains.xcdatamodeld */; };
 		B619748B210DBAA200C43391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B619748A210DBAA200C43391 /* Assets.xcassets */; };
 		B619748E210DBAA200C43391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B619748C210DBAA200C43391 /* LaunchScreen.storyboard */; };
+		B6197496210DD5DA00C43391 /* AmrConstrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6197495210DD5DA00C43391 /* AmrConstrains.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B619748A210DBAA200C43391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B619748D210DBAA200C43391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B619748F210DBAA200C43391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6197495210DD5DA00C43391 /* AmrConstrains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmrConstrains.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				B6197480210DBAA200C43391 /* AppDelegate.swift */,
 				B6197482210DBAA200C43391 /* ViewController.swift */,
+				B6197495210DD5DA00C43391 /* AmrConstrains.swift */,
 				B6197484210DBAA200C43391 /* Main.storyboard */,
 				B619748A210DBAA200C43391 /* Assets.xcassets */,
 				B619748C210DBAA200C43391 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				B6197489210DBAA200C43391 /* SimpleConstrains.xcdatamodeld in Sources */,
 				B6197483210DBAA200C43391 /* ViewController.swift in Sources */,
+				B6197496210DD5DA00C43391 /* AmrConstrains.swift in Sources */,
 				B6197481210DBAA200C43391 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
