@@ -11,10 +11,10 @@ import UIKit
 
 extension UIView {
     
-    var width: View_Attribute  {
+    var Width: View_Attribute  {
         return(self,NSLayoutAttribute.width)
     }
-    var height: View_Attribute  {
+    var Height: View_Attribute  {
         return(self,NSLayoutAttribute.height)
     }
     var Center_x: View_Attribute  {
@@ -24,19 +24,19 @@ extension UIView {
         return(self,NSLayoutAttribute.centerY)
         
     }
-    var top: View_Attribute  {
+    var Top: View_Attribute  {
         return(self,NSLayoutAttribute.top)
         
     }
-    var bottom: View_Attribute  {
+    var Bottom: View_Attribute  {
         return(self,NSLayoutAttribute.bottom)
         
     }
-    var leading: View_Attribute  {
+    var Leading: View_Attribute  {
         return(self,NSLayoutAttribute.leading)
         
     }
-    var trailing: View_Attribute  {
+    var Trailing: View_Attribute  {
         return(self,NSLayoutAttribute.trailing)
         
     }
@@ -49,15 +49,22 @@ func +(left: MultyplierMultView_Attribute, right: Constant ) -> (MultyplierMultV
     return (left,right)
 }
 
-func +=(left: View_Attribute, right: MultyplierMultView_AttributePlusConstant ) -> NSLayoutConstraint {
+func ==(left: View_Attribute, right: MultyplierMultView_AttributePlusConstant ) -> NSLayoutConstraint {
     return NSLayoutConstraint.init(item: left.0, attribute: left.1, relatedBy:NSLayoutRelation.equal , toItem: right.0.1.0, attribute: right.0.1.1, multiplier: right.0.0, constant: right.1)
 }
-func +=(left: View_Attribute, right: View_Attribute ) -> NSLayoutConstraint {
+func ==(left: View_Attribute, right: View_Attribute ) -> NSLayoutConstraint {
     return NSLayoutConstraint.init(item: left.0, attribute: left.1, relatedBy:NSLayoutRelation.equal , toItem: right.0, attribute: right.1, multiplier: 1, constant: 0)
 }
-func +=(left: View_Attribute, right: Constant ) -> NSLayoutConstraint {
+func ==(left: View_Attribute, right: Constant ) -> NSLayoutConstraint {
     return NSLayoutConstraint.init(item: left.0, attribute: left.1, relatedBy:NSLayoutRelation.equal , toItem: nil , attribute: .notAnAttribute, multiplier: 1, constant: right)
 }
-func +=(left: View_Attribute, right: MultyplierMultView_Attribute ) -> NSLayoutConstraint {
+func ==(left: View_Attribute, right: MultyplierMultView_Attribute ) -> NSLayoutConstraint {
     return NSLayoutConstraint.init(item: left.0, attribute: left.1, relatedBy:NSLayoutRelation.equal , toItem: right.1.0 , attribute: right.1.1, multiplier: right.0, constant: 0)
 }
+
+typealias View_Attribute = (Any,NSLayoutAttribute)
+typealias Multiblier = CGFloat
+typealias Constant = CGFloat
+typealias  MultyplierMultView_Attribute = (Multiblier,View_Attribute)
+typealias MultyplierMultView_AttributePlusConstant = (MultyplierMultView_Attribute,Constant)
+
